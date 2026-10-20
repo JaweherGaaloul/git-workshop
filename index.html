@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Participants wall · JEENISo Git &amp; GitHub workshop</title>
+  <meta name="description" content="Everyone who forked this repository, added a file and got their pull request merged.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <p class="brand"><span class="logo" aria-hidden="true"><i></i><i></i><i></i><i></i></span>JEENISo</p>
+      <h1>Git &amp; GitHub workshop</h1>
+      <p class="lead">Fork this repository, add a file about yourself and open a pull request. When it is merged, your card appears below.</p>
+      <ol class="steps">
+        <li><b>1</b> Fork</li>
+        <li><b>2</b> Clone</li>
+        <li><b>3</b> Branch &amp; change</li>
+        <li><b>4</b> Push</li>
+        <li><b>5</b> Pull request</li>
+      </ol>
+      <p class="links">
+        <a id="repoLink" href="https://github.com/amine-mosbah/git-workshop">Open the repository</a>
+        <a id="howLink" href="https://github.com/amine-mosbah/git-workshop#step-1-fork-the-repo">Read the steps</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="bar">
+      <h2>Participants <span id="count" class="count">0</span></h2>
+      <button id="refresh" type="button">Refresh</button>
+    </div>
+    <p id="status" class="status" role="status">Loading participants…</p>
+    <ul id="wall" class="wall"></ul>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Plain HTML, CSS and JavaScript. No build step. Each card comes from a file in <code>participants/</code>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
